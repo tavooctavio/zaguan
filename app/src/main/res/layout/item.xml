@@ -2,7 +2,7 @@
 <androidx.cardview.widget.CardView
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="100dp"
+    android:layout_height="130dp"
     android:layout_margin="10dp">
 
     <LinearLayout
@@ -11,16 +11,30 @@
         android:orientation="vertical">
 
         <TextView
-            android:id="@+id/item"
+            android:id="@+id/tvquesadilla"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="ITEM"
+            android:text="Quesadilla de Queso"
             android:textSize="30sp"/>
 
-        <ImageView
-            android:layout_width="60dp"
-            android:layout_height="70dp"
-            android:src="@android:drawable/ic_menu_agenda"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="80dp"
+                android:src="@android:drawable/ic_menu_agenda"
+                android:layout_margin="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rica quesadilla frita rellena de queso."
+                android:textSize="20sp"/>
+
+        </LinearLayout>
 
     </LinearLayout>
 

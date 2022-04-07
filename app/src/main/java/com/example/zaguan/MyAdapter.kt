@@ -8,10 +8,10 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 
-class MyAdapter(val items:ArrayList<String>, val context:Context):RecyclerView.Adapter<MyAdapter.ViewHolder>() {
+class MyAdapter(val itemsQuesadilla:ArrayList<String>, val context:Context):RecyclerView.Adapter<MyAdapter.ViewHolder>() {
 
     class ViewHolder(view: View):RecyclerView.ViewHolder(view){
-        val item = view.findViewById<TextView>(R.id.item)
+        val tvquesadilla = view.findViewById<TextView>(R.id.tvquesadilla)
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
@@ -19,10 +19,10 @@ class MyAdapter(val items:ArrayList<String>, val context:Context):RecyclerView.A
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-        holder.item.text = items.get(position)
+        holder.tvquesadilla.text = itemsQuesadilla.get(position)
     }
 
     override fun getItemCount(): Int {
-        return items.size
+        return itemsQuesadilla.size
     }
 }

@@ -7,44 +7,51 @@ import androidx.recyclerview.widget.RecyclerView
 
 class MainActivity : AppCompatActivity() {
 
-    val items: ArrayList<String> = ArrayList()
+    val quesadilla: ArrayList<String> = ArrayList()
+    val panbazos: ArrayList<String> = ArrayList()
+    val tostadas: ArrayList<String> = ArrayList()
+    val postres: ArrayList<String> = ArrayList()
+    val bebidas: ArrayList<String> = ArrayList()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        addItems()
+        addQuesadilla()
+        addPambazos()
+        addTostadas()
+        addPostres()
+        addBebidas()
 
         val rvOpciones = findViewById<RecyclerView>(R.id.rvOpciones)
         rvOpciones.layoutManager = LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false)
-        rvOpciones.adapter = MyAdapter(items, this)
+        rvOpciones.adapter = MyAdapter(quesadilla, this)
     }
 
-    private fun addItems(){
-        items.add("Item A")
-        items.add("Item B")
-        items.add("Item C")
-        items.add("Item D")
-        items.add("Item E")
-        items.add("Item F")
-        items.add("Item G")
-        items.add("Item H")
-        items.add("Item I")
-        items.add("Item J")
-        items.add("Item K")
-        items.add("Item L")
-        items.add("Item M")
-        items.add("Item N")
-        items.add("Item O")
-        items.add("Item P")
-        items.add("Item Q")
-        items.add("Item R")
-        items.add("Item S")
-        items.add("Item T")
-        items.add("Item U")
-        items.add("Item V")
-        items.add("Item X")
-        items.add("Item Y")
-        items.add("Item Z")
+    private fun addQuesadilla(){
+        quesadilla.add("Quesadilla de Queso")
+        quesadilla.add("Quesadilla de Pollo")
+        quesadilla.add("Quesadilla de Picadillo")
+        quesadilla.add("Quesadilla de Tinga Res")
+        quesadilla.add("Quesadilla de Tinga Pollo")
+        quesadilla.add("Quesadilla de Hongos")
+        quesadilla.add("Quesadilla de Huitlacoche")
+        quesadilla.add("Quesadilla de Cesos")
+        //items.add("Item I") asi estaba en el ejemplo del curso
+    }
+
+    private fun addPambazos (){
+
+    }
+
+    private fun addTostadas (){
+
+    }
+
+    private fun addPostres (){
+
+    }
+
+    private fun addBebidas () {
 
     }
 }
