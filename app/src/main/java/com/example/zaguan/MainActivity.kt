@@ -8,15 +8,18 @@ import androidx.recyclerview.widget.RecyclerView
 class MainActivity : AppCompatActivity() {
 
     val quesadilla: ArrayList<String> = ArrayList()
-    val panbazos: ArrayList<String> = ArrayList()
-    val tostadas: ArrayList<String> = ArrayList()
-    val postres: ArrayList<String> = ArrayList()
-    val bebidas: ArrayList<String> = ArrayList()
+    val pozole: ArrayList<String> = ArrayList()
+    val panbazo: ArrayList<String> = ArrayList()
+    val tostada: ArrayList<String> = ArrayList()
+    val postre: ArrayList<String> = ArrayList()
+    val bebida: ArrayList<String> = ArrayList()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
         addQuesadilla()
+        addPozole()
         addPambazos()
         addTostadas()
         addPostres()
@@ -39,19 +42,38 @@ class MainActivity : AppCompatActivity() {
         //items.add("Item I") asi estaba en el ejemplo del curso
     }
 
-    private fun addPambazos (){
+    private fun addPozole() {
+        pozole.add("Pozole Carne Surtida")
+        pozole.add("Pozole Carne Maciza")
+        pozole.add("Pozole Carne Pollo")
+        pozole.add("Pozole Sin Carne")
+    }
 
+    private fun addPambazos (){
+        panbazo.add("Pambazo de Papa")
+        panbazo.add("Pambazo de Picadillo")
+        panbazo.add("Pambazo de Pollo")
     }
 
     private fun addTostadas (){
-
+        tostada.add("Tostada de Tinga Pollo")
+        tostada.add("Tostada de Tinga Res")
+        tostada.add("Tostada de Pata")
+        tostada.add("Tostada de Picadillo")
     }
 
     private fun addPostres (){
-
+        postre.add("Fresas con Crema")
+        postre.add("Gelatinas de Agua")
+        postre.add("Gelatina de leche")
+        postre.add("Gelatina combinada")
+        postre.add("Pan ideal")
     }
 
     private fun addBebidas () {
-
+        bebida.add("Agua de Sabor")
+        bebida.add("Coca Cola")
+        bebida.add("Boing")
+        bebida.add("Sidral")
     }
 }

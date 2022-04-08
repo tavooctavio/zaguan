@@ -2,7 +2,7 @@
 <androidx.cardview.widget.CardView
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="130dp"
+    android:layout_height="140dp"
     android:layout_margin="10dp">
 
     <LinearLayout
@@ -23,9 +23,10 @@
             android:orientation="horizontal" >
 
             <ImageView
-                android:layout_width="70dp"
-                android:layout_height="80dp"
-                android:src="@android:drawable/ic_menu_agenda"
+                android:layout_width="75dp"
+                android:layout_height="85dp"
+                android:src="@drawable/queso"
+                android:scaleType="centerCrop"
                 android:layout_margin="10dp"/>
 
             <TextView
