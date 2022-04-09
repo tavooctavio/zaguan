@@ -1,5 +1,6 @@
 package com.example.zaguan
 
+import android.media.Image
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -8,6 +9,7 @@ import androidx.recyclerview.widget.RecyclerView
 class MainActivity : AppCompatActivity() {
 
     val quesadilla: ArrayList<String> = ArrayList()
+    val quesadillaDescripcion: ArrayList<String> = ArrayList()
     val pozole: ArrayList<String> = ArrayList()
     val panbazo: ArrayList<String> = ArrayList()
     val tostada: ArrayList<String> = ArrayList()
@@ -19,16 +21,24 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         addQuesadilla()
+        addQuesadillaDescripcion()
+
         addPozole()
         addPambazos()
         addTostadas()
         addPostres()
         addBebidas()
 
+        val imgQuesadillas = listOf<Image>(
+            Image(R.drawable.queso),
+        )
+
         val rvOpciones = findViewById<RecyclerView>(R.id.rvOpciones)
         rvOpciones.layoutManager = LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false)
-        rvOpciones.adapter = MyAdapter(quesadilla, this)
+        rvOpciones.adapter = MyAdapter(quesadilla, quesadillaDescripcion ,this)
     }
+
+
 
     private fun addQuesadilla(){
         quesadilla.add("Quesadilla de Queso")
@@ -40,6 +50,17 @@ class MainActivity : AppCompatActivity() {
         quesadilla.add("Quesadilla de Huitlacoche")
         quesadilla.add("Quesadilla de Cesos")
         //items.add("Item I") asi estaba en el ejemplo del curso
+    }
+
+    private fun addQuesadillaDescripcion() {
+        quesadillaDescripcion.add("Rica quesadilla de queso")
+        quesadillaDescripcion.add("Rica quesadilla de Pollo")
+        quesadillaDescripcion.add("Rica quesadilla de Picadillo")
+        quesadillaDescripcion.add("Rica quesadilla de Tinga de Res")
+        quesadillaDescripcion.add("Rica quesadilla de Tinga de Pollo")
+        quesadillaDescripcion.add("Rica quesadilla de Hongos")
+        quesadillaDescripcion.add("Rica quesadilla de Huitlacoche")
+        quesadillaDescripcion.add("Rica quesadilla de Cesos")
     }
 
     private fun addPozole() {
