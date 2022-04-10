@@ -29,16 +29,11 @@ class MainActivity : AppCompatActivity() {
         addPostres()
         addBebidas()
 
-        val imgQuesadillas = listOf<Image>(
-            Image(R.drawable.queso),
-        )
 
         val rvOpciones = findViewById<RecyclerView>(R.id.rvOpciones)
         rvOpciones.layoutManager = LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false)
         rvOpciones.adapter = MyAdapter(quesadilla, quesadillaDescripcion ,this)
     }
-
-
 
     private fun addQuesadilla(){
         quesadilla.add("Quesadilla de Queso")
