@@ -19,7 +19,7 @@
         app:layout_constraintVertical_bias="0.0">
 
         <ImageView
-            android:id="@+id/imageView5"
+            android:id="@+id/IVQuesadillas"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -32,13 +32,13 @@
             android:orientation="vertical">
 
             <ImageView
-                android:id="@+id/imageView6"
+                android:id="@+id/IVTostadas"
                 android:layout_width="match_parent"
                 android:layout_height="115dp"
                 app:srcCompat="@drawable/tostadas_de_pollo" />
 
             <ImageView
-                android:id="@+id/imageView7"
+                android:id="@+id/IVPambazos"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 app:srcCompat="@drawable/pambazo_principal" />
@@ -58,7 +58,7 @@
         app:layout_constraintVertical_bias="0.0">
 
         <ImageView
-            android:id="@+id/imageView9"
+            android:id="@+id/IVPozole"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:srcCompat="@drawable/pozole_principal" />
@@ -75,18 +75,18 @@
         app:layout_constraintTop_toBottomOf="@+id/linearLayout">
 
         <ImageView
-            android:id="@+id/imageView10"
+            android:id="@+id/IVPostres"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            app:srcCompat="@drawable/queso" />
+            app:srcCompat="@drawable/fresascrema" />
 
         <ImageView
-            android:id="@+id/imageView11"
+            android:id="@+id/IVBebidas"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            app:srcCompat="@drawable/queso" />
+            app:srcCompat="@drawable/coca" />
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
